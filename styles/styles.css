@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------- Fondo + fuente --------------*/
+
+body {
+    background-color: #DA9090;
+    margin: 25px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-size: 200%;
+}
+
+/*-------------- Navegador --------------*/
+
+.barraNavegacion {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+
+
+/*-------------- Navegador > line svg --------------*/
+
+
+.svgLine {
+
+    background-color: black;
+    border-radius: 30px;
+    width: auto;
+    height: 1px;
+    background-position: center;
+    margin: 7px;
+
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 1rem;
+    font-size: 125%;
+}
+
+.titulo {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    font-size: 125%;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*-------------- Sobre mi --------------*/
+
+.textCenter {
+    text-align: center;
+
+}
+
+.sobreMi {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+/* Primera parte del grid de Sobre Mi */
+.sobreMi01>p {
+    color: white;
+    font-size: 115%;
+
+}
+
+
+/* Segunda parte del grid de Sobre Mi */
+.sobreMi02 {
+    background-image: url(/img/ftCv.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+
+}
+
+
+/*-------------- Trayectoria --------------*/
+
+
+.trayectoria {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.divTrayectoria>h2 {
+
+    text-align: center;
+
+}
+
+.divTrayectoria>p {
+
+    color: white;
+    font-size: 115%;
+
+}
+
+/*-------------- Proyectos --------------*/
+
+.proyectosGrid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.itemProyectos {
+    background-color: rgb(61, 53, 53);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: -15px;
+}
+
+/*-------------- Tecnologías --------------*/
+
+.tecnologiasGrid01 {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+
+
+}
+
+.tecnologiasGrid02 {
+
+    display: grid;
+    grid-template-columns: 1fr 1.05fr 1.05fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+
+
+
+
+.itemTecnologias {
+
+    width: 200px;
+    height: 200px;
+    background-color: rgba(61, 53, 53, 0.71);
+    border-radius: 5px;
+}
+
+.itemTecnologias01 {
+    background-image: url(/img/python.png);
+    /*150 150*/
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+
+
+}
+
+.itemTecnologias02 {
+    background-image: url(/img/Java.svg);
+    /*150 150*/
+
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    background-size: 80%;
+
+}
+
+.itemTecnologias03 {
+    background-image: url(/img/html.png);
+    /*150 150*/
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+
+
+}
+
+.itemTecnologias04 {
+    background-image: url(/img/css.png);
+    /*150 150*/
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+
+
+}
+
+.itemTecnologias05 {
+    background-image: url(/img/js.png);
+    /*150 150*/
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+
+
+}
+
+/*-------------- Formulario --------------*/
+
+
+
+
+
+
+
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+input {
+
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+
+    background: transparent;
+    outline: none;
+    color: #000000;
+
+    border: solid 2px #000000;
+    border-bottom: none;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+
+    background: transparent;
+    outline: none;
+
+    color: #000000;
+
+    font-size: 0.875em;
+
+    border: solid 2px #020202;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+
+#submit {
+    width: 470px;
+
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+
+
+    font-size: 0.875em;
+    color: #000000;
+
+    outline: none;
+    cursor: pointer;
+
+    border: solid 2px #000000;
+    border-top: none;
+}
+
+
+
+
+/*-------------- Fotter --------------*/
+
+.footer {
+    background-color: rgb(61, 53, 53);
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-link {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
